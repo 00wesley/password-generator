@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/4330c4a6e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./src/script.js" defer></script>
+    <title>Gerador de senhas</title>
+  </head>
+  <body>
+    <div class="title-project">
+      <h1 class="title">
+        Gerador de senhas<i class="fa-solid fa-lock" style="color: #6610f2"></i>
+      </h1>
+    </div>
+    <div class="container-input">
+      <span> Tamanho <span id="value"> </span> caracteres</span>
+      <input
+        type="range"
+        class="slider"
+        id="slider"
+        min="6"
+        max="16"
+        value="12"
+      />
+      <button id="generator-btn">Gerar senha</button>
+    </div>
+
+    <div class="container-password hide" id="container-password">
+      <span id="password-title">Sua senha gerada foi:</span>
+      <span id="user-password">wih8f98f20hf</span>
+      <span id="tooltip"
+        >Clique na senha para copiar
+        <i class="fa-regular fa-copy" style="color: #6610f2"></i
+      ></span>
+    </div>
+  </body>
+</html>
